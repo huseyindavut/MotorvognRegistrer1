@@ -16,7 +16,7 @@ public class MotorvognController {
     public ArrayList<Motorvogn> hentAlleMotorvogn(){
         return alleMotorvognRegistrer;
     }
-    @@GetMapping("/slett")
+    @GetMapping("/slett")
     public void slettAlleMotorvogn(){
         alleMotorvognRegistrer.clear();
     }

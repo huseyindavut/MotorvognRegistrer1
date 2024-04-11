@@ -1,23 +1,25 @@
 package com.example.motorvognregistrer1;
 
 public class Motorvogn {
-    private String eierPerson, eiersNavn, eiersAdresse, kjennettegn, bilmerke,biltype;
+    private String eierPersonNr, eiersNavn, eiersAdresse, kjennetegn, bilmerke, biltype;
 
     public Motorvogn(String eierPerson, String eiersNavn, String eiersAdresse, String kjennettegn, String bilmerke, String biltype) {
-        this.eierPerson = eierPerson;
+        this.eierPersonNr = eierPersonNr;
         this.eiersNavn = eiersNavn;
         this.eiersAdresse = eiersAdresse;
-        this.kjennettegn = kjennettegn;
+        this.kjennetegn = kjennetegn;
         this.bilmerke = bilmerke;
         this.biltype = biltype;
+
+
     }
 
-    public String getEierPerson() {
-        return eierPerson;
+    public String getEierPersonNr() {
+        return eierPersonNr;
     }
 
-    public void setEierPerson(String eierPerson) {
-        this.eierPerson = eierPerson;
+    public void setEierPersonNr(String eierPersonNr) {
+        this.eierPersonNr = eierPersonNr;
     }
 
     public String getEiersNavn() {
@@ -37,11 +39,11 @@ public class Motorvogn {
     }
 
     public String getKjennettegn() {
-        return kjennettegn;
+        return kjennetegn;
     }
 
     public void setKjennettegn(String kjennettegn) {
-        this.kjennettegn = kjennettegn;
+        this.kjennetegn = kjennettegn;
     }
 
     public String getBilmerke() {
@@ -60,3 +62,4 @@ public class Motorvogn {
         this.biltype = biltype;
     }
 }
+

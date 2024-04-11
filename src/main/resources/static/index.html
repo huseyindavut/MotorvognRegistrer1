@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <title>Motorvogn</title>
+    <script src="js.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="col-md-4"></div>
+    <h1>Motorvogn Registrerer</h1>
+    <form class="form">
+        <div class="from-group">
+          <label for="eierPersonNr">Eiers personnr</label>
+          <input type="text" id="eierPersonNr" class="form-control">
+        </div>
+        <div class="from-group">
+            <label for="eiersNavn">Eiers Navn</label>
+            <input type="text" id="eiersNavn" class="form-control">
+        </div>
+        <div class="from-group">
+            <label for="eiersAdresse">Eiers Adresse</label>
+            <input type="text" id="eiersAdresse" class="form-control">
+        </div>
+        <div class="from-group">
+            <label for="kjennetegn">Kjennetegn</label>
+            <input type="text" id="kjennetegn" class="form-control">
+        </div>
+        <div class="from-group">
+            <label for="bilmerke">Bilmerke</label>
+            <input type="text" id="bilmerke" class="form-control">
+        </div>
+        <div class="from-group">
+            <label for="biltype">Biltype</label>
+            <input type="text" id="biltype" class="form-control">
+        </div>
+
+    </form>
+    <br>
+    <button class="btn btn-success" onclick="regMotorvogn()">Register</button>
+</div>
+<div class="col-md-8"></div>
+<h3>Alle Bilene</h3>
+<div>
+    <table class="table-hover" id="resultat"></table>
+</div>
+<br>
+<button class="btn btn-danger" onclick="slettAlle()">Slett Alle</button>
+
+</div>
+</body>
+</html>
